@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://api.fontshare.com/v2/css?f[]=pally@500&f[]=boska@900,901,500,400,200&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=aktura@400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=pally@500&f[]=boska@900,901,500,400,200&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=melodrama@300,600,700,500&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@600,500,700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+</head>
+<body >
+
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light sticky-top" style="font-family: 'Pally';">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="navbar-mid-portion-sm">
+
+                <a class="navbar-brand" href="#">NavToggle</a>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills nav-fill me-auto mb-2 mb-lg-0 fs-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose Artist
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item fs-3" href="/pages/tom.html">Tom Holland</a></li>
+                  <li><a class="dropdown-item fs-3" href="/pages/eminem.html">Eminem</a></li>
+                  <li><a class="dropdown-item fs-3" href="/pages/iron-man.html">Robert Downey Jr.</a></li>
+                  <li><a class="dropdown-item fs-3" href="/pages/tim.html">Tim Henson</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <div class="navbar-mid-portion">
+
+                <a class="navbar-brand" href="#">Contact</a>
+            </div>
+            <!-- <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+      <div class="container bg-danger-subtle h-100">
+        <div class="row row-max-height">
+            <div class="col-12 col-md-6 col-lg-4">
+               <div class="card w-100 artist-custom-card-styles jayz  profile-column">
+                <div class="card-header"><h1 class="text-center text-white">Jay-Z</h1></div>
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFBIYGRgaGBwYHBwZGhgaHhoaGhgaGRgaGRkcIS4lHCErHxoaJzgnKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHxISHzQrJSs0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQEDBAYHAgj/xAA+EAACAQIEBAQEAwcDAgcAAAABAgADEQQSITEFBkFRImFxgRORobEyQsEUI1JictHwB+HxJJIVFjNDc6Ky/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAJBEAAgICAgICAwEBAAAAAAAAAAECEQMhEjEEQTJREyJhwSP/2gAMAwEAAhEDEQA/ANqiIl5gKRKxAKREQBERAEREAx8VilQZm2v5aDqT5Df2hsWgbIaiBv4cy3120vNN55FUVFyMCmQMVa1lIJ1F/IfSag+KVjd86ta2YMSARYA9T0lTm06o0RwqUU7O0yk5GOKY1D8VKzlCBZhdk0/KbiyMLag2OvvNuwHFamLpPQZlTEKq1Uamxyups6Muo2PhI79uklKyMsLXs26JE8M45SqqgD+NkDFTbMGt4lPQEEH5RxnjiYdMzqysSVUFb3axIuQbW079ZLkivhK6JaJrnKXGamI+IKxXMCCqqBopv1662E2OdTtWclFxdMTzPNaqqKXdgqgXJY2AHmZ6g5QiIgC0WiIAtERAEREAREQC5ERAEREAREQBKSsQCk8tUUGxIva/t1MwMfxijRbJUfKcubY2IvbQ95Ccx8KrVP8AqMNULkqBkBGqEahehuOkjKVdFkIX3ojudMV8PFYesbPSK2OxUqG/eL1BurSP43w+jTcohV0tmZdc9PNsNN9D6mYv7QGouj02Chs9n0UOBZgvUXudNYHHCmHsiKCzFmuAxBFhcFrm1gB5ShuzXGLj7InWkTkfMjC9rnzFmHe33lzCu6VErUrq4OZDe4O+ZG0666ecoePnrQpXN91J97XteZGD4mjsM4Cdsost/O2uvyE5tEqT0S/MNan8SnisO5QOVZgBYo7aMQO9jr5jznjm3iPx6NPS7oDmNrE6gXy9LqFa3ZpEYnOKTq6FfGCW0OZie/a36TFqYy1KwOpXK36H1tpO22OMVX8PfBcfUWoq03ZC7IhZTrbMCBftcD2nU+J8YNJ6VP4YepUI0zZVUEgE3tci97adNbTiuHYh1YdDce03zhzsUqY2s4aoSUohiv420uF7DMQB6yalS0VSgpNNnjC0Wx+JqvUrfuUqZVU5rMpZlRQBoL2Gup1nR0FgB2FpofLHBURi9dwF+IWVFcZFqKqlGcg6kjMQNhlPcTenqWUtYmwvpqTpew85KHVlWbtL6PUSE4dzFSqfEJqIFR0AJIXwsgOpJ1ObMNLbSaZwASTYAXJOwHe8sTTKXFp7KxPFKsrjMjBh3BuJ7g4IiIAiDEAREQC5ERAEREAREQDC4rjhRTM19SEBABsWvYm/S81nhvN7FxTqU73bLmUk+h8zNq4hhBVpujG2YEX7HoZzfiiPhLI10LDVwNW1Oqntbp66CVTck7RpwqEotPs2nmvF4Zks1VC6m4W9+hB22Nj17TVE446fu8PVCJ4ifzWbUnKvQX7SO4TikpPnrYdKyXt4iGI1/Gqk2O+tx7iUcUg9TLlKt4qTrcWBv4SOm9rdMu8g9uy2MaVeiao8HGJwrV71Hr03OfOTZlFicg6WBuLX2tIPDOKLurKHR1amQRtm2ZexDAH2mfwLi2Io5gpuhBLK1yLWOovsfMbyKcnNdup+XyjXo6k92Y7UBkJcajaYj0stje1+kv4mozsTfQaAeUtuuvihHWX3x5ankOvn/eYhBy69TPQ8p7driKDZjJprJnhdQqGe4JGiBgTlH5iovudPlIsre0yUqADTQw1Z1OmXcTiyxKja4Ommtuvc6nWSjc1VgFKt41TIGNiFS1vAlrBtrsQTpNbdzeM+bSEqOS32bly1yy+JX4xrFFLG1hdjbci+i+R1m0pyfRKlalWvUDWzBqrWYjYlVtfp8pCcG5uVEpYdaeiIFL3A1AI0X8xJtfUbmW8fzPiHYqtkVQc2UG51GuuvsPOS5RSKnDJJ90jf8PQVFVFUKqiwUCwA8p7mu8rVazgu+IR0toiAFhfYu24vY6CbFLYu1ZmnHjKhEROkREGIAiIgFyIEQBERAEREASN4pVw7f9PiMpDi+V9jbazdDp6ySmPjMKlVClRQynv9wehiV1o7HvZy/mfhq4bEouHCsjpnCvZ1/EcwIO48t5axVCi6q9Jfh3BzJe6q1/ynfKegMrxjg9SlWNN7lMxZHJBupPTz6EdwT1lymmW5v5/83/SZmborXZbxdbLTULp4QL9dLHrqdZEipoSdTM3EksbKCbyb4RybWrEFhlU9/wDPSc5JE+Ll0al7XOsx6inexnZMFyNRVBnS7dTff6bS7ieUaTLlC7baX18+8g8teixYW/ZxS0qBN843yeyMPhpe9r9gTv7S2/JlQoCgsbXN+9p38sTn4WaWVHSemU/3ktj+Xq1ME5CbC5t28pD2I3k1JS6K5Rcey3VS9jPCr/xLrH5S0w+ckRM1MYANEHQC+3ymTTpr4XWtkRm8ejMUa2hsNSO2sixTupYdNxMjCuAupNiCD5dQRItEk2dC4BwvEKhqYbH03Vh+E0/Df+YXJVv995t2Fz5F+IVL28WS+W/8ubW05fyia5rj9mJsCC7ObIRoMrgCxJvoN/bSdQo4hHuFcEqbMAQSp7EdDLYVRlzJ3t2XYiJYUCIiAIiIBciIgCIiAUJtqZiPxOgpymsgN7WLDeZVRAwKsLg6EGa/xng6KA1LC0DuXaoNFUWYkDqdL+0jJtdE4JPTL3G+Y6dCnnUq7E2ADabbkiaBiOOYyuxqBzlGmUaC1ybBPnv2iowq1Fd6brhVfKQi2GlrqvbTfyJ1vJXHNhjrh9EIta+bUdQTqLdpTKTaNcMaT/012rx+rU0fL8j8tTpLlF2c2sSWsBpqb9NP0mC6Xe/W/t6zZOV8OrV0sRoR97yLdIsim3RvnJ/KSUkD1FBcjr0m3imqjQTxTcBR6TGr4oSDaRbFNl93lszEGI85X9ov1lTki1RaLzoDvLZQS2annPXxDI2iVMxMbhlYai80Tj/KiOCaYym9/L0m/V6vzkRiX8Ug3xdomoqSpnGsTh2RijjUG0x3E3XnLh9x8RRqDr6TTHXbSa8U+UbMWWHGVF7B1FFwwvcW8gfMfOW6yHXKLr5aS0rdpk0VZvzdOpt7ybIL6JTgmGqYoph0qOijxX8TKCAbNkXQHfxEjedU4PwpMPTCIoHV21Jd7eJmJ1Nz8pz7lLh2aooTFlHXVlCt1GgVs2V/Qj2nTaSEKAzZiAAWIAzG2psNBfyluNGbPL0eoiJYZxERAEREAuGIiAIiIAmucc5mSlmRCGfY2IsO+u0k+NcQShSZ2bLcZRbfM2gtbtv7TlnE00AHiIZguW9tyT622v5Sqcn0jRhxprkzFxWLVz4SV8tt99hprr7y2lY6gH2/U/SX8Nw4lAW8Ja7Z3OUFQf8A2xu+3Tv21mL8MITZww72tcf09PSVpGmy/hLm50t57j+03XkeiDUvpby9Zpa4kZfX/BN0/wBPT4mNjt7DtIyJw7OiVqtpgPdjprMkIXOkvCiq7uPmJVJWXxaRHjDNLwpm3X/PSZnxE/iE9JWU9ZXxRO2R7UzKFGtJTOttbTwWUiKQtkDirjeRlUmbTXpKe0hcfgSouolcolkZLo1/iqZ0dT1Uj6TmjJYXGk6Ni6lswPac+rfiI85b4z7KPKXTMdiCNtRrp1lKas2t56IynUf29JcFC+itYjob/wCCa7MlGXwU1Fqq1Fk+ILkZjl23FzYEntOqcD4yaxanVpmnWQeJDYgjTxIwOo1HpOPhCrqGspNvFfS17XuL/adP5a/aA4SvQDlEOTEobqyPZrFjYvfS2lx26ycW7KsyTWzaYiJaZBERAEREAuREQBERAIHmzCU3Sn8WpkVaikmxJYdUFj4Sbb9JzzEY9Eqs+HVhZmKEgeEHMLAG5Aym2/edB5r/AGXIjYpmspJVFZhmJ7hdem9x1nO+JuKpPwKeSimnt5m92Y79TKZrZrw/EwuJ8RqV3z1GzNYLfyGwsNBMZFO+8q1MbC5+U9hgLyJaeQbnbrOscnYXJSXTVtTOV4IZ6igdT+s7Fg2WnTBYgBVvr6aSEnstxrVnvjnE8gyU9+p/sZpmOxjnX4huNiAZI8SxAQguSXc3VFF2PbS+kxhi9PHUoUTf8LtmYX/iC2t85RK2XxSXZE0+K1FNviH/ADy6TYuD8baxzGazxV9c2enUB/Mmh+Vzf5zJ4HhDWYKGIA+sqkmXRaN7/wDFbJe/SQeP5myr4DrJLH8GZafhJOm2n2nN8emVypv9ZFJt0S/VKyVfmXEBrq/sdZmYfmnENo+3lrI/g2HzW/d0gO9R7X+hl/ijKn4qYX+dDmQntcbe4ltNIq7dmViMUtVSRYHr6d5omKNnYHoZsWHY59976i2okHx2naqSNiLyeHUqK86biYhrEfm0l0MpIJup/iXUemX/AHmE2szqGDqZGf4bZFALN0AJAvr5kTSzJZJ8IxGGcfCxaeEm4qLo9Mm3YWK6dQZ1LgOGWnSVVrGqh8SMbE5Tra40Ive3lOYcI4bQrsiM7Uz4s5HXS62UjQ3BFvOdQ4Lg0w9JKCVMwUEjMwLEFiSbDpc9NtJZAozdEhERLDMDERAKXiViAXBEpKwBEpKwCA49wZ8SygtSREBsxQPUubXsW0UadL3sJp+J4G6JUfFXp0qeYLYqTUc6Ja2pubfI9p06R3GeGUq6p8YkIj/EIuLNlB0fuOvsJCUfZbDI1r0cbyWQFtL6j7SlMXUn2kvxAHFYnIlvG9lCiwRBpsB0EyOIcG+CzotyBl3GuUgkE9r6fOUt0rNkf2dEfy9TH7Qml9Z1VVzplzuv9BsT5bG48pzLhSFayHKQDcf3nVcHSOVQNyLmVS2y+GomocV4PSpF6lUYhi9hnzoMvkFQg2PYjppaQJ4Xg20zP7Xv32KH7mdnXDLlyvY330Eha/LOEvmNJD1N9vddpW3JFqUX2jRMNwjDuqrTRyFJN1a51/jZVAX0vNz5b4OEuSu9rakmw6knc+su0U+I3w8OiqlMgO9gADvkRR+a1vS4k/hgEUC+vWQ3J7JukqRXEUbr7TR+NcFQlgysQfFdTY37abzfKtdbSIx+FZwchANja+ov0vOSW7R2L1TOWY/h+FbwkVUK6HKQ3/cCtx7yPXDol1pVqljuLKwPqo0nS6VGhXGTEUlFRDlIIuQbbqw1sehmZR5Zw4FxTv5MWb6MTJxm2iMopM5ngsHUTMcoAt4c6gsO9luB8r27SK48t8rb9DOl8ewYUEKoAtbSw+05rxpvEFjHK5kckUoEQU0vOk8gha2HdHCMtshUjXKRs3l2/qPYTS+G8Hq1g/w6ebILkXAOu2++0lOR8YaeJWkWKZmKkG2rKCMp89x7CbIvZ5+RWmibx3I7m/w6i6P4MxPhpFbgE2uSH0Gux9pmciYXDunxlpkVlGRyWvY7nKL6A3+hm4TFwfDqVIu1NFQu2ZyPzHU6/M/MyxRSdozvK3FpmVERJlQiIgCJSIBclZSVMApErKQBIvmXDu+GqpTvnK3AXdrEHL7gGSkQ9nU6dmt8ocvjDJnfWs6+Lsg3Cj9Zc5qwoFF3RPGWVTlFywPe2/4QPebAZZxNMZc5J/dkuADbMSpQA+V2B9pVkVQZfgk3lTZpPBuGs+S+lnII10Nlv6aWm+4Soq3Y+g9BpIfl+5DlgBqWAWwAGVctwNr2v6ESxXxtiwHT/j9Jkbo9KMbZLV+Jdc1t9JrPHOYTbKp1MjuI8RIB1kTwymar5jqAdJQ25dmlJRJavxivh8OBSvqxdv6mtqevSYvCOc69z8U+hG3ob7Sdr4JcttSSLafSRL8Jci4pltxoP0klxrZB3ejLxPOGVbk/WQw58r5rKvhvbex+U9ty8bgmkfPr9OkxsNwr94AVI17f5aI8F2HyvRLNxN86VmFmOh9Ol/rNqwHG8yjW95qvFsLlQWHht/nvIjCY1kOX5byFOv1LXXs3vieKDqdZy/jafviB2E2JuIE7mQ+JGashOxFj6XN53E2nbK8qTVG18h4VgWcggFV6aH8VvfSYXMnLtSniRi6SFkuHYJ+JSv4jl6ggdPObNy6MqsNMtlC27DNv53P2k3PQwrlBM8jyG45GWMDiRURXAIDAEXFjYje3SX4iXmViIiAIiUgC8RaIBclZSIAiIgCIiAJEcb4scOUzoDScMHJ6FcpT1Bu1x/aS81T/AFCYjDoNMpqBWPa6tlt6kWkZ/Fk8TqaZJ8v4pXFV73uQ2h0sRYD/AOokLin8frpMD/TrFFnrJqRkBB1sSrEH6ETLxurE9jPOyLi0j2cT5Jsg+NUXJMzuFVFQhEtcGxJ6AbkzK4ogIHn/AMzWcb8RQ/w1O4vYa2Pb3+84leixutmzYnmJE0QjTdzY39Adpaocyk6rWc+mW3ytPf8Ap/wzC1Keeq6moS6lWYArZeg3BAubzek5XwxAuucFBfaxJ/ONNLid4paILKjRavNTkf8AqMv9IT63BmAvMJuDnDjs4F/+4Te//JGFCOCuZmLFCfyj8uk13inIlJQxWoQcoy9PET4r26AAzjUfZL8i9MjMTxZXRih0H4kOttN176/eQLgOuZeh+m8j8FQqGoQmoBKlumxv9pNcJoZVYHufppOuKiIycizSpHS8uVKd3QW6dfWZJAvIriWIYOgT8R0HW5JsNPlIxuUqR2TUVbJLi/ECmREcqwZTcHYAHfyvY28pu3L2LxL+HEU1y5Ay1FZSGudAVHl1tNf4NyulcVHrK6oz+AG4ayXW+u2u1/ObPwfgNPDaozs2UJmdifCpJUAbAC824YOKPL8nLGbZKxETQYxERAEREAREQD3ERAEREAREpAKzV+fMDVrUUWmmYCoCwAuQLEBh6XN/WbPENWjsXxdmDwThyYekiImXS7dyx3J85B8VoZXYe4m1SN45hsxPfUj56j5zJ5MLSaN/hzdtM1it4kFtxKcLoAsSfzbzw5IYr31nrBPla3n9DMi0eh6M+ty1QqsXyqr/AJj0bXcjvLbcpVE8dCoyE6Xp1GQ27aEaS/iahIurWa3zkcvHa1PTMfvLeSZ1FafBMeoKLi6uRr3Gd+u58W1+4M84zlerlBr4upluCbuzai40LHTQke8uvzRXtqTMCrjalc+NjbzkeVEqX0jOpYamiZUWyjRfTqffvIir4C9ugA9zrM6ribCynQC3+fSQ2NqH8N9dz6yPyZFuij1tLz3xvArQxGDs16rFGqKSDlOdSot0679pf5bwnxsSikXVTnb0XX6mw95v9Hg2HSo1YUlNR2zFmuzXvfTNfLsNrTTgx9yMPlZ6aiSBlIibDzBEQYAiIgCIiAIlIgHuVlIgFZSIgCIiAIiVRCxsoJJ6DWAVpIWYKNyQPmZicdsjsP4WI9tv0m08J4WVId9+i9vM+cgOe8EUPxlHhawbybYX8j9/WZ8ztaN3ix4vfs0nilLNZ03G/rLOHUNYjY/fqJ5fFZW12MI4Rrg+Fuv8J7+8y8bN90ZhpkgjtIXGUH7H1sT9ZPU8Wtr6ecPxAbWsJU9MtjtGoU0qMbENb0aZuHw7dT7SeTGqTqNpaq1UGotc6kzjlZ1KkYGITKuY+0gKr3JMkeJ4zOSBsJGouY6bS2KpWytu3SNy5Aw2lWod7qg9hmP3X5TcZE8n4LJghUsfFWb0sFRRb3U/OS034vijx/Jf/RiIiWFAiIgCIiAUiIgCIiAe4iVAvoIBSJl0eG1W2Qgd28P3mfR4D/G/sov9TOOSROMJS6RCz1Tpsxsqlj5C82ijwuiv5Mx7tr9NpmKABYAAdgLSLl9FscD9mvYbgbnVyEHbc/TSTWFwqUxZV9Sdz6mXi0tO0i22aI4YouUNST7fqf0lcVh0qIyOoZWBVgdiDvKYQ+EHvc/My6GnKDezh/OXA3wlTKblG1Rz+Yfwsf4h177+mvUsYRoZ9A8b4VTxNJqNUXVtiN1YbMp6Ef3B0JnBuZOBVsFW+HVF1Nyjj8LqOo7EaXXp5ixNEoU7Rohk5Kn2YFXiOXQaD7eUrTx5bYyxUw4f1kbXwxE5UZdnW5x6JepxC11za+sw6/ESfCD6kSNNOZXD8G9V1SlTZ3bZUBJPn5DzOgkuEV6IPJJmRSdmsOk3HlLlWriiGAyUwfE5Gmm6p/G30HXsdh5U/wBNglqmOIJ0IpIfCP8A5HH4j/Kunmdp0ekEACIAqqLAKAAANgANpL8dvYeWlSME4RKVJEpiyJlXLvdT4WLdySbk95C43D5HI6bj0m01UBVgdipH0kRjaOcAddx/b3lqfFmacOcf6iGiVZSDYixEpLTEIiUgFYlIgCIiAIiIBtlLhdFfyZj/ADEn6bTLRVXRVA9ABKFp5DSmz0lBLpF1mnm883lVYHUG4glR6lCZ5JnkmDtFSZj130MuO1pjVkLDW4HbYn1I29B/tB0yeFPmpJffKLzKZbbTE4atqYFrZdPYbeulplhp0ofZ6BvI3jfCKWKpNSrJmU69irDZlPRhff8ASZ4NjK1HVRmYgAdTAPn3mTgNXAVclTxI18lQCwcDoR+Vx1HuNJr1d8xsouSbADUk9AANz5T6C45SpYum1BqWZG/M2liNmTqGHQyP5R5VwuCIyqXrWsar2JPcINkHkNe5MreJXZb+Z8aOfcu/6Y161nxTGim+QWNRh530Tpvc+QnVuC8Dw+ETLRpqg6ndm82Y6sfWSzgKJh6uf5R9ZYopdFdtlcxc6aL95fRANBPS2A0npROnCxjamWm57IbepFh95g1t5k8UPgC/xMvyDAn7Ae8xqu8jIux9HivhVqi40fv0Pkf7yHq0mQ5WFiJM02tL1RFcZWF+x6j0M7GTXZTmwKW49muykzsbwx08Q8SdxuPUfrMGWp2YZRcXTEREHBEpEAREQDc6m3+dpUREoPWKLMThv4T/AFv/APoysQDKlDEQcLTbr6/oYq7GIg6zJwm0utvKRJIoZR5G8e/An9f6RE79HDHSW624iJ0EnxD8PtPNDb2iJwkXRKrEQcMbiHT1T7tMWpvKRISLsfRQS+nSInCwz6O3z+xmnNufU/eIlmM8/wAn5IpERLDMUMREAREQD//Z" alt="" class="card-img-top">
+                    <ul class="list-group list-group-flush jayz">
+                        <li class="list-group-item jayz text-center fs-4">Founder of TalentFactory</li>
+                        <li class="list-group-item text-center fs-4">Total Bookings : 1 Million +</li>
+                        <li class="list-group-item text-center fs-4">Alias: Iceberg Slim</li>
+                        <li class="list-group-item text-center fs-4">Type : Entrepreneur/SongWriter</li>
+                      </ul>
+               </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 tom-holland-custom-styles artist-custom-col-2 jayz d-flex flex-column justify-content-center gap-5">
+                <form class="contact-form">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" required class="form-control no-border" id="exampleFormControlInput1" placeholder="We will send you the booking receipt to this email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Choose Artist</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Eminem</option>
+                        <option>Tom Holand</option>
+                        <option>Iron Man</option>
+                        <option>Tim Henson</option>
+                      </select>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Message</label>
+                      <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Just a brief regarding what the artist should perform at your event..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg contact-submit">Book My Artist</button>
+                  </form>
+                
+            </div>
+            <div class="col-12 col-md-12 col-lg-4 d-flex align-items-center flex-column justify-content-start align-items-md-center align-items-sm-center p-0">
+              <div class="card custom-max-height-col-3 custom-col-3-styles jayz">
+
+                <blockquote>
+
+                  <p>“Artists can have greater access to reality; they can see patterns and details and connections that other people, distracted by the blur of life, might miss. Just sharing that truth can be a very powerful thing.”</p>
+
+                  <span> ~ Jay-Z</span>
+                  
+                </blockquote>
+                  
+
+
+            </div>
+            </div>
+        </div>
+      </div>
+    
+  
+    <!-- col-4 col-md-3 col-lg-2 bg-body-secondary -->
+
+   
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>

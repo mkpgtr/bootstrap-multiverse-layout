@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://api.fontshare.com/v2/css?f[]=pally@500&f[]=boska@900,901,500,400,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://api.fontshare.com/v2/css?f[]=pally@500&f[]=boska@900,901,500,400,200&f[]=melodrama@300,400,600,700,500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-light bg-light sticky-top" style="font-family: 'Pally';">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <div class="navbar-mid-portion-sm">
+
+                <a class="navbar-brand" href="#">Talent Factory</a>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link fs-4 active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-4" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-4 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose Artist
+                </a>
+                <ul class="dropdown-menu fs-4" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/pages/eminem.html">Eminem</a></li>
+                  <li><a class="dropdown-item" href="/pages/tom.html">Tom Holland</a></li>
+                  <li><a class="dropdown-item" href="/pages/iron-man.html">Robert Downey Jr.</a></li>
+                  <li><a class="dropdown-item" href="/pages/tim.html">Tim Henson</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled fs-4" href="#" tabindex="-1" aria-disabled="true">Logout</a>
+              </li>
+            </ul>
+            <div class="navbar-mid-portion justify-content-lg-center home">
+
+                <a class="navbar-brand" href="#">Talent Factory</a>
+            </div>
+
+            <ul class="d-flex justify-content-between gap-2 align-items-center me-3 mt-3 social-icons-ul d-md-none d-lg-flex">
+                <li><i class="fa-brands fa-twitter"></i></li>
+               <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    
+
+    <div class="container-fluid">
+        <div class="row d-flex flex-column gap-2 flex-md-row justify-content-center justify-content-around cards-container align-items-strech justify-content-lg-center justify-content-xxl-between">
+            <div class="card col-4 col-md-3 col-lg-2 bg-body-secondary home-custom-card-styles" >
+                <img src="https://img.wattpad.com/021145ea64958428d31d249783c820ef7b93c374/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f786470536679383963357a5343773d3d2d3734383533363332342e313561613937613030646634356532613231383835303536303830382e676966" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tom Holland</h5>
+                    <p class="card-text">Thomas Stanley Holland is an English actor. His accolades include a British Academy Film Award, three Saturn Awards, a Guinness World Record and an appearance on the Forbes 30 Under 30 Europe list. .</p>
+                    <a href="./pages/tom.html" class="btn btn-primary">Explore</a>
+                    <span class="profession">Actor</span>
+                </div>
+            </div>
+            <div class="card col-4 col-md-3 col-lg-2 bg-body-secondary home-custom-card-styles">
+                <img src="https://i.pinimg.com/originals/2c/be/59/2cbe5974a60ee0e89deea22f1b7f4d90.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Eminem</h5>
+                  <p class="card-text">Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem (/ˌɛmɪˈnɛm/; often stylized as EMINƎM), is an American rapper and record producer. </p>
+                  <a href="./pages/eminem.html" class="btn btn-primary">Explore</a>
+                  <span class="profession">Rapper</span>
+                </div>
+            </div>
+            <div class="card col-4 col-md-3 col-lg-2 bg-body-secondary home-custom-card-styles" >
+                <img src="https://media.tenor.com/M4DBlkQFqB8AAAAC/tim-henson-polyphia.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tim Henson</h5>
+                  <p class="card-text">Tim Henson is the lead guitarist of Polyphia. Polyphia is a primarily instrumental progressive rock band based in Plano, Texas, formed in 2010. .</p>
+                  <span class="profession">Musician</span>
+                  <a href="./pages/Tim.html" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="card col-4 col-md-3 col-lg-2 bg-body-secondary home-custom-card-styles" >
+                <img src="https://i.pinimg.com/originals/65/61/61/6561615f2e7d30d9eff7173a8ca83931.gif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Robert Downey Jr.</h5>
+                    <p class="card-text">Robert John Downey Jr. is an American actor and producer."</p>
+                    <a href="./pages/iron-man.html" class="btn btn-primary">Explore</a>
+                    <span class="profession">Iron Man</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- col-4 col-md-3 col-lg-2 bg-body-secondary -->
+
+   
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
